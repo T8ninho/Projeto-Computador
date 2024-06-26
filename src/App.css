@@ -1,0 +1,14 @@
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-transition {
+  transition: opacity 0.5s ease-in-out; /* Ajuste a duração conforme necessário */
+}
+
+.icon-hidden {
+  opacity: 0;
+}
