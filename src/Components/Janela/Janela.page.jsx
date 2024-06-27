@@ -3,7 +3,7 @@ import { JanelaContainer, JanelaCabecalho, JanelaConteudo } from './Janela.style
 
 export default function Janela() {
 	const draggableRef = useRef(null);
-	const [position, setPosition] = useState({ x: 1000, y: 300 });
+	const [position, setPosition] = useState({ x: 100, y: 100 });
 	const [offset, setOffset] = useState({ x: 0, y: 0 });
   
 	const handleMouseDown = (e) => {
