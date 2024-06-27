@@ -44,7 +44,7 @@ export default function Janela() {
 			</JanelaCabecalho>
 			<JanelaConteudo>
 				<p>
-					Sei lá sou um Post-It
+					Sei lá sou um Post-It inicial
 				</p>
 			</JanelaConteudo>
 		</JanelaContainer>

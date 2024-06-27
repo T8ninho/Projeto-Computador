@@ -9,6 +9,13 @@ export const Background = styled.div`
 	display: flex;
 `;
 
+export const AreaIcones = styled.div`
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+`;
+
 export const TaskBar = styled.div`
 	background-color: #00000080;
 	border-top: 1px solid #00000050;
@@ -21,19 +28,4 @@ export const TaskBar = styled.div`
 	right: 0;
 	display: flex;
 	align-items: center;
-`;
-
-export const Icones = styled.div`
-	height: 4vh;
-	width: 4vh;
-	margin: 10px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url(${props => props.Icon});
-	transition: background-image .2s ease-in-out;
-	${props => props.IconHover &&  `
-		&:hover {
-			background-image: url(${props.IconHover});
-		}
-	`}
 `;
