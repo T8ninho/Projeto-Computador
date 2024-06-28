@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const JanelaContainer = styled.div`
-	height: 300px;
-	width: 300px;
+	min-height: 300px;
+	min-width: 300px;
 	background-color: #2d2d2d;
 	position: absolute;
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -50,12 +50,11 @@ export const JanelaCabecalho = styled.div`
 export const JanelaConteudo = styled.div`
 	color: #fff;
 	display: flex;
-	height: 90%;
+	flex-direction: column;
+	/* background-color: #ffffff25; */
+	/* height: 90%; */
 	p {
-			display: flex;
-		font-size: 1.6vh;
-		height: 100%;
-		width: 100%;
+		font-size: 1rem;
 	}
 
 `;
