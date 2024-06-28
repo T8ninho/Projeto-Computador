@@ -51,7 +51,7 @@ export default function Janela({ children, title }) {
 
   const toggleMaximize = () => {
     if (maximized) {
-      setPosition({ x: 100, y: 100 }); // Volta para a posição original ou outra que desejar
+      setPosition({ x: 100, y: 100 });
       setMaximized(false);
     } else {
       setPosition({ x: 0, y: 0 });
