@@ -65,8 +65,8 @@ export default function Janela({ children, title }) {
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        width: maximized ? '100%' : '500px',
-        height: maximized ? '95vh' : '500px',
+        width: maximized ? '100%' : '300px',
+        height: maximized ? '95vh' : '300px',
       }}
     >
       <JanelaCabecalho onMouseDown={handleMouseDown}>
