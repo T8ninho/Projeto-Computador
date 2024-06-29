@@ -5,7 +5,7 @@ import VSCode_Logo from '../../assets/VSCode_Logo.webp'
 import Photoshop_Logo from '../../assets/Photoshop_Logo.png'
 import Janela from '../../Components/Janela/Janela.page';
 import IconeDesktop from '../../Components/IconeDesktop/IconeDesktop.page';
-import Navegador from '../../Components/Navegador/Navegador.page';
+// import Navegador from '../../Components/Navegador/Navegador.page';
 
 export default function Desktop({ImageUrl}) {
 
@@ -15,10 +15,10 @@ export default function Desktop({ImageUrl}) {
 				<IconeDesktop Icon={Chrome_Logo} name='Chrome'/>
 				<IconeDesktop Icon={VSCode_Logo} name='VS Code'/>
 				<IconeDesktop Icon={Photoshop_Logo} name='Photoshop'/>
-				<Janela title='Toni Navegador'>
+				{/* <Janela title='Toni Navegador'>
 					<Navegador Url='http://t8ninho.com/'/>
-				</Janela>
-				{/* <Janela>dd</Janela> */}
+				</Janela> */}
+				<Janela>dd</Janela>
 			</AreaIcones>
 		</Background>
 	)
