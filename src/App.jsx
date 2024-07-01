@@ -1,4 +1,3 @@
-import './App.css'
 import { Icones } from './Components/IconeDesktop/IconeDesktop.styles'
 import Desktop from './Pages/Desktop/Desktop.page'
 import { TaskBar } from './Pages/Desktop/Desktop.styles'
