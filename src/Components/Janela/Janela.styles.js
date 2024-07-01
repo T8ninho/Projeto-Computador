@@ -8,7 +8,7 @@ export const JanelaContainer = styled.div`
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	color: #000;
 	border: 1px solid #ffffff50;
-	
+	transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 `;
 
 export const JanelaCabecalho = styled.div`

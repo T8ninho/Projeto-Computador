@@ -5,7 +5,7 @@ export const IconesContainer = styled.div`
 	flex-direction: column;
 	place-items: center;
 	height: auto;
-	padding-inline: 10px;
+	/* padding-inline: .4rem; */
 
 	&:hover {
 		background-color: #ffffff50;
@@ -19,10 +19,11 @@ export const IconesContainer = styled.div`
 
 `;
 export const Icones = styled.div`
-	height: 4vh;
-	width: 4vh;
-	margin: 10px;
+	height: 2rem;
+	width: 2rem;
+	margin: .5rem;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	background-image: url(${props => props.Icon});
 	transition: background-image .2s ease-in-out;

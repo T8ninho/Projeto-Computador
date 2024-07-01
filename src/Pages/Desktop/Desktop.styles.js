@@ -5,23 +5,22 @@ export const Background = styled.div`
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 100%;
 	display: flex;
 `;
 
 export const AreaIcones = styled.div`
-	padding: 10px;
+	padding: .5rem;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: .5rem;
 `;
 
 export const TaskBar = styled.div`
 	background-color: #00000080;
 	border-top: 1px solid #00000050;
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(.5rem);
 	width: 100%;
-	height: 5vh;
+	height: 3rem;
 	position: fixed;
 	bottom: 0;
 	left: 0;

@@ -1,26 +1,27 @@
-:root {
+#root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  /* line-height: 1; */
 }
 
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 	cursor: default;
-	user-select: none;
+	user-select: none; /*Bloqueia a seleção de texto no site*/
+	overflow: hidden; /*Bloqueia a exibição da barra de rolagem no site*/
+}
+
+html {
+  font-size: 1.8vh; /*Medida global para trabalhar com medida rem.   Ex: 2rem*/
 }
 
 body {
-  display: flex;
   width: 100vw;
   height: 100vh;
   background-color: #242424;

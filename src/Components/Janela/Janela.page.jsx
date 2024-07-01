@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { JanelaContainer, JanelaCabecalho, JanelaConteudo } from './Janela.styles';
 
 export default function Janela({ children, title }) {
@@ -50,14 +50,25 @@ export default function Janela({ children, title }) {
   };
 
   const toggleMaximize = () => {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
     if (maximized) {
-      setPosition({ x: 100, y: 100 });
+      const newX = (windowWidth - 300) / 2;
+      const newY = (windowHeight - 300) / 2;
+      setPosition({ x: newX, y: newY });
       setMaximized(false);
     } else {
       setPosition({ x: 0, y: 0 });
       setMaximized(true);
     }
   };
+
+  useEffect(() => {
+    if (maximized) {
+      setPosition({ x: 0, y: 0 });
+    }
+  }, [maximized]);
 
   return (
     <JanelaContainer
@@ -73,11 +84,11 @@ export default function Janela({ children, title }) {
         <p><b>{title}</b></p>
         <div>
           <span className='CursorDesativado'>–</span>
-          <span onClick={toggleMaximize}>❐</span>
+          <span onClick={toggleMaximize} style={{ cursor: 'pointer' }}>❐</span>
           <span className='CursorDesativado'>✖</span>
         </div>
       </JanelaCabecalho>
-      <JanelaConteudo style={{ width: '100%', height: 'calc(100% - 3%)' }}>
+      <JanelaConteudo style={{ width: '100%', height: 'calc(100% - 40px)' }}>
         {children}
       </JanelaConteudo>
     </JanelaContainer>
@@ -86,5 +97,5 @@ export default function Janela({ children, title }) {
 
 Janela.propTypes = {
   children: PropTypes.node,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };

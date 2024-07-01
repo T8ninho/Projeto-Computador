@@ -18,7 +18,7 @@ export default function IconeDesktop({Icon, name}) {
             <p>{name}</p>
         </IconesContainer>
     );
-};
+}
 
 IconeDesktop.propTypes = {
 	Icon: PropTypes.string.isRequired,
