@@ -14,17 +14,3 @@ export const AreaIcones = styled.div`
 	flex-direction: column;
 	gap: .5rem;
 `;
-
-export const TaskBar = styled.div`
-	background-color: #00000080;
-	border-top: 1px solid #00000050;
-	backdrop-filter: blur(.5rem);
-	width: 100%;
-	height: 3rem;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-`;

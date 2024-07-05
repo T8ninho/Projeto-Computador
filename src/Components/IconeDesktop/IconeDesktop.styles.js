@@ -26,11 +26,4 @@ export const Icones = styled.div`
 	background-position: center;
 	background-size: cover;
 	background-image: url(${props => props.Icon});
-	transition: background-image .2s ease-in-out;
-
-	${props => props.IconHover &&  `
-		&:hover {
-			background-image: url(${props.IconHover});
-		}
-	`}
 `;
