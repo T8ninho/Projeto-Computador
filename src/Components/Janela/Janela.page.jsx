@@ -76,8 +76,8 @@ export default function Janela({ children, title }) {
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        width: maximized ? '100%' : '10rem',
-        height: maximized ? '95vh' : '10rem',
+        width: maximized ? '100%' : '60%',
+        height: maximized ? '95vh' : '60%',
       }}
     >
       <JanelaCabecalho onMouseDown={handleMouseDown}>
@@ -88,7 +88,7 @@ export default function Janela({ children, title }) {
           <span className='CursorDesativado'>✖</span>
         </div>
       </JanelaCabecalho>
-      <JanelaConteudo style={{ width: '100%', height: 'calc(100% - 40px)' }}>
+      <JanelaConteudo>
         {children}
       </JanelaConteudo>
     </JanelaContainer>

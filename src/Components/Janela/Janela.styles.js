@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const JanelaContainer = styled.div`
 	min-height: 15rem;
 	min-width: 15rem;
-	background-color: #2d2d2d;
 	position: absolute;
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	color: #000;
@@ -46,14 +45,10 @@ export const JanelaCabecalho = styled.div`
 	}
 `;
 export const JanelaConteudo = styled.div`
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-
+	width: 100%;
+	height: 100%;
 	textarea {
-		display: flex;
-		padding: .3rem;
-	 	height: 100%;
+	 	height: 90%;
 		width: 100%;
 		resize: none;
 		border: none;
