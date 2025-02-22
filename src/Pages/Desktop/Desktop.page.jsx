@@ -18,7 +18,9 @@ export default function Desktop({ImageUrl}) {
 				{/* <Janela title='Toni Navegador'>
 					<Navegador Url='http://t8ninho.com/'/>
 				</Janela> */}
-				<Janela title='Anotações'>Sei lá sou um Post-It</Janela>
+				<Janela title='Anotações'>
+					<textarea type='text'/>
+				</Janela>
 			</AreaIcones>
 		</Background>
 	)

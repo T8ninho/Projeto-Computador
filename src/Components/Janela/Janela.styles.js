@@ -50,4 +50,13 @@ export const JanelaConteudo = styled.div`
 	display: flex;
 	flex-direction: column;
 
+	textarea {
+		display: flex;
+		padding: .3rem;
+	 	height: 100%;
+		width: 100%;
+		resize: none;
+		border: none;
+	}
+
 `;
